@@ -41,7 +41,7 @@
     var loadChat = function (cb) {
         if (!cb) cb = function () {
         };
-        $.get("https://rawgit.com/Artis1337/plugBot-3/master/lang/langIndex.json", function (json) {
+        $.get("https://cdn.jsdelivr.net/gh/Artis1337/plugBot-3/lang/langIndex.json", function (json) {
             var link = basicBot.chatLink;
             if (json !== null && typeof json !== "undefined") {
                 langIndex = json;
@@ -169,16 +169,16 @@
         status: false,
         name: "basicBot",
         loggedInID: null,
-        scriptLink: "https://rawgit.com/Artis1337/plugBot-3/master/basicBot.js",
+        scriptLink: "https://cdn.jsdelivr.net/gh/Artis1337/plugBot-3/basicBot.js",
         cmdLink: "http://git.io/245Ppg",
-        chatLink: "https://rawgit.com/Artis1337/plugBot-3/master/lang/en.json",
+        chatLink: "https://cdn.jsdelivr.net/gh/Artis1337/plugBot-3/lang/en.json",
         chat: null,
         loadChat: loadChat,
         retrieveSettings: retrieveSettings,
         settings: {
             botName: "basicBot",
             language: "english",
-            chatLink: "https://rawgit.com/Artis1337/plugBot-3/master/lang/en.json",
+            chatLink: "https://cdn.jsdelivr.net/gh/Artis1337/plugBot-3/lang/en.json",
             maximumAfk: 120,
             afkRemoval: true,
             maximumDc: 60,
@@ -222,7 +222,7 @@
             songstats: true,
             commandLiteral: "!",
             blacklists: {
-                NSFW: "https://rawgit.com/Artis1337/plugBot-3-costumization/master/blacklists/ExampleNSFWlist.json",
+                NSFW: "https://cdn.jsdelivr.net/gh/Artis1337/plugBot-3-costumization/blacklists/ExampleNSFWlist.json",
                 OP: "https://github.com/Artis1337/plugBot-3-costumization/blob/master/blacklists/ExampleOPlist.json"
             }
         },
